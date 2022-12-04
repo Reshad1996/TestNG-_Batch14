@@ -1,4 +1,4 @@
-package Class02;
+package Review01;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -12,48 +12,45 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class HardAssertions {
+public class HardAssertion {
 
     WebDriver driver;
     @BeforeMethod(alwaysRun = true)
-    public void launchTheWebsite() {
-
+    public void launchTheWebsite(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver=new ChromeDriver();
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
-        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
     }
 
-    @Test(groups = "Regression")
-    public void invalidCredential() {
-
+    @Test
+    public void invalidCredentials(){
+        //username
         WebElement userName = driver.findElement(By.xpath("//input[@name='txtUsername']"));
         userName.sendKeys("admin");
+//        password
         WebElement password = driver.findElement(By.xpath("//input[@id = 'txtPassword']"));
-        password.sendKeys("Hum@nhrm");
-        WebElement logIn = driver.findElement(By.xpath("//input[@id='btnLogin']"));
+        password.sendKeys("abracadabra");
+//        login
+        WebElement logIn = driver.findElement(By.xpath("//*[@id='btnLogin']"));
         logIn.click();
-
-        // invalid credential
+//        invalid credentials
         WebElement errorMSG = driver.findElement(By.xpath("//span[text()='Invalid credentials']"));
         String ActualErrorMsg = errorMSG.getText();
-
-        String ExpectedErrorMsg = "Invalid credentials";
-
-        // Assertion
+        String ExpectedErrorMsg="Invalid credentials";
+//   Assertion
         Assert.assertEquals(ActualErrorMsg,ExpectedErrorMsg);
-
-        // confirm that the error message is displayed
+//        confirm that the error message is displayed
+//        testing the SOUT
+        System.out.println("i am here after 1st assertion");
         boolean isDisplayed = errorMSG.isDisplayed();
-        // assertion will pass if the parameter is "True" will fail if the parameter boolean is false
+//        assertion will pass if the paraemter boolean is "true" will fail if the parameter boolean is false
         Assert.assertTrue(isDisplayed);
-
     }
 
     @AfterMethod(alwaysRun = true)
-    public void closeBrowser() {
-        driver.close();
+    public void closeBrowser(){
+        driver.quit();
     }
-
 }

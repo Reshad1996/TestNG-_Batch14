@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b0ccf39-abd7-4971-83e9-b3f222cdd6a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classWiseExecutionExample.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ClassWiseExecutionExample.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Class01/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Class01/C1_Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Class02/HardAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Class02/HardAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Class02/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Class02/C2_Notes" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,23 @@
   }
 }</component>
   <component name="RunManager" selected="TestNG.C:/Users/argul/IdeaProjects/TestNGBasicBatch14/testng.xml">
+    <configuration name="Annotations" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestNGBasicBatch14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Class03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Class03" />
+      <option name="MAIN_CLASS_NAME" value="Class03.Annotations" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/argul/IdeaProjects/TestNGBasicBatch14/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNGBasicBatch14" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -73,16 +88,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HardAssertions" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="dataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNGBasicBatch14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Class02.*" />
+          <option name="PATTERN" value="Class03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Class02" />
-      <option name="MAIN_CLASS_NAME" value="Class02.HardAssertions" />
+      <option name="PACKAGE_NAME" value="Class03" />
+      <option name="MAIN_CLASS_NAME" value="Class03.dataProvider" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -90,33 +105,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoftAssertion" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestNGBasicBatch14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Class02.*" />
+          <option name="PATTERN" value="Class04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Class02" />
-      <option name="MAIN_CLASS_NAME" value="Class02.SoftAssertion" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="priority" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNGBasicBatch14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Class01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Class01" />
-      <option name="MAIN_CLASS_NAME" value="Class01.priority" />
+      <option name="PACKAGE_NAME" value="Class04" />
+      <option name="MAIN_CLASS_NAME" value="Class04.loginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -127,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/argul/IdeaProjects/TestNGBasicBatch14/testng.xml" />
+        <item itemvalue="TestNG.loginTest" />
+        <item itemvalue="TestNG.dataProvider" />
+        <item itemvalue="TestNG.Annotations" />
         <item itemvalue="TestNG.ExampleAssertion" />
-        <item itemvalue="TestNG.SoftAssertion" />
-        <item itemvalue="TestNG.HardAssertions" />
-        <item itemvalue="TestNG.priority" />
       </list>
     </recent_temporary>
   </component>
